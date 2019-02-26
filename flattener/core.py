@@ -55,7 +55,7 @@ def flatten_contract(solc_AST, output_dest):
 		return
 
 	processed_contracts = set()
-	output_solidity_code = "pragma solidity ^0.4.13;\n\n"
+	output_solidity_code = "pragma solidity ^0.5.4;\n\n"
 	while processed_contracts != contracts_with_sources:
 		# print(processed_contracts, "vs", contracts_with_sources)
 		for cname, cdepends in dependency_graph.items():
